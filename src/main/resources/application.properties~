@@ -1,0 +1,20 @@
+spring.session.store-type=none
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=create
+=======
+# use this config to auto generate Tables- use on first use only!
+#spring.jpa.generate-ddl=true
+#spring.jpa.hibernate.ddl-auto=create
+
+spring.datasource.driver-class-name =  com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.datasource.url = jdbc:sqlserver://dbtestpg23.database.windows.net:1433;database=test_pg
+spring.datasource.username = dbuser@dbtestpg23
+spring.datasource.password = Edfr34qwe
+
+
+# ===============================
+# = DBCP2
+# ===============================
+spring.datasource.dbcp2.initial-size=10
+spring.datasource.dbcp2.max-total=11
+spring.datasource.dbcp2.pool-prepared-statements=true
